@@ -10,15 +10,29 @@ export class ProfileService {
  
   private username: string;
   private clientId = '1e2b690c1df35dde0d5c';
-  private clientSecret = '39ac91d43d6bc58c8b6c743603d99dce3ab23d43';
+  private clientSecret = 'c7cc0883a79961a9feac5f2352336637b40344d9';
 
-  constructor(private http: HttpClient) {
-    console.log('service is now ready');
+  constructor(private _http: HttpClient) {
+    // console.log('service is now ready');
     this.username = 'Bryan4real';
   } 
    
    getProfileInfo(){
-     return this.http.get('https://api.github.com/users/' + this.username + '?client_id=' + this.clientId + '?client_secret=' +this.clientSecret);
+     return this._http.get('https://api.github.com/users/' + this.username + '/repos?client_id=' + this.clientId + '&client_secret=' +this.clientSecret);
    }
+   getRepos() {
+    return this._http
+      .get(
+        "https://api.github.com/users/" +
+          this.username +
+          "/repos?client_id=" +
+          this.clientId +
+          "&client_secret=" +
+          this.clientSecret
+      )
+  }
+  updateUsername(username: string) {
+    this.username = username;
+  }
 }
 

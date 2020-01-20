@@ -9,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  profile: any;
+  ProfileService: any;
+
   constructor(private profileService: ProfileService) { 
-    this.profileService.getProfileInfo().subscribe(profile => {console.log(profile);
+    this.profileService.getProfileInfo().subscribe(profile => {
+      // console.log(profile);
+      this.profile = this.profile;
     });
   }
 
