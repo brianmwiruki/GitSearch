@@ -1,1 +1,23 @@
 @import 'bootstrap/dist/css/bootstrap.css';
+body {
+    background: url('../src/assets/git.png')no-repeat center;
+    text-align: center;
+    background-position: top;
+}
+
+h1 {
+    float: left;
+    margin-bottom: 30%;
+    text-align: center;
+}
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 42%;
+}
+
+button:hover {
+    width: 55%;
+}
