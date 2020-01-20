@@ -1,34 +1,133 @@
-@import 'bootstrap/dist/css/bootstrap.css';
-body {
-    background: url('../src/assets/git.png')no-repeat center;
-    text-align: center;
-    background-position: top;
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+  background: rgb(19,19,23);
+  background: linear-gradient(85deg, rgba(19,19,23,1) 0%, rgba(19,19,28,1) 13%, rgba(2,2,14,0.9668242296918768) 21%, rgba(24,44,50,1) 47%, rgba(27,93,112,1) 71%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+}
+
 
 h1 {
-    float: left;
+    font-size: 80px;
+    color: #fff;
+  }
+
+h2 {
     text-align: center;
-    margin-top: 13%;
+    border-radius: 0.1rem;
+    padding: 1%;
 }
 
-form {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+h3 {
+    color: #de27a9;
+    font-style: italic;
+    font-size: 20px;
 }
 
-form input:hover {
-    width: 100%;
-}
-
-button {
-    margin-left: auto;
-    margin-right: auto;
+#toop {
     margin-top: 3%;
-    width: 42%;
 }
 
-button:hover {
-    width: 55%;
-    transition: 1s ease;
+.mainpage {
+    height: 100vh;
 }
+
+input[type=text] {
+    border-radius: 0.2rem;
+    font-style: italic;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+
+#bt {
+    /* margin-left: 1%; */
+    border: none;
+    color: #0000FF;
+    font-size: larger;
+    weight: 1000;
+}
+
+#bt:hover {
+    color: #15e770;
+    background: none;
+    text-decoration: underline;
+
+}
+
+::placeholder {
+    color: rgb(245, 226, 226);
+}
+
+.date {
+    font-size: 10px;
+    margin-left: 2%;
+}
+
+#logo {
+    text-decoration: rgb(19,19,23);
+
+
+}
+
+.hi {
+    color: rgb(217, 228, 228);
+}
+
+#last {
+    background: rgb(19,19,23);
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 0.2rem;
+    padding: 2%;
+}
+
+#last {
+    color: rgb(178, 167, 250);
+}
+
+#repositories {
+    border: 1px solid #15e75f;
+    padding: 3%;
+    height: 590px;
+    overflow: auto;
+    border-radius: 0.2rem;
+
+}
+
+#cad {
+    border: 1px solid #fff;
+    margin-top: 1%;
+}
+
+.cad {
+    background: #2e2e87;
+    color: #fff;
+}
+
+/* width */
+#repositories::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  #repositories::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(78, 75, 75);
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  #repositories::-webkit-scrollbar-thumb {
+    background: rgb(19,19,23);
+    border-radius: 10px;
+  }
