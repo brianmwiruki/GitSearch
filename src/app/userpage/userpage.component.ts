@@ -33,7 +33,7 @@ export class UserpageComponent implements OnInit {
 
   ngOnInit() {
 
-    this.profileService.updateProfile("DjCooGie");
+    this.profileService.updateProfile("Bryan4real");
     this.profileService.getProfileInfo().subscribe(profile => this.profile = profile);
     this.profileService.getProfileRepos().subscribe(repos =>  this.repos = repos);
 

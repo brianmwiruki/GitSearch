@@ -25,6 +25,8 @@ h2 {
     text-align: center;
     border-radius: 0.1rem;
     padding: 1%;
+    color: #fff;
+    weight: 1000;
 }
 
 h3 {
@@ -53,16 +55,16 @@ input[type=text] {
 #bt {
     /* margin-left: 1%; */
     border: none;
-    color: #0000FF;
+    color: #3ebb13;
     font-size: larger;
     weight: 1000;
 }
 
 #bt:hover {
-    color: #15e770;
+    color: #0000FF;
     background: none;
     text-decoration: underline;
-
+    font-size: 40px;
 }
 
 ::placeholder {

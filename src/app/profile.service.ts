@@ -11,7 +11,7 @@ export class ProfileService {
 
   private username: string;
   private client_id = '1e2b690c1df35dde0d5c';
-  private client_secret = 'c7cc0883a79961a9feac5f2352336637b40344d9';
+  private client_secret = '73dcc4ef93e294ac55108e6c60faa9270ddcd603';
 
   constructor(private http:HttpClient) {
 
