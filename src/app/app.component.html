@@ -1,1 +1,49 @@
-<app-profile></app-profile>
+<div class="container">
+    <div>
+        <h1>Github Search</h1>
+    </div>
+    <br>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        <form class="form-group">
+            <input type="text" class="form-control" placeholder="Github Username" [(ngModel)]="username" name="username" size="100%" width="50%">
+            <button class="btn btn-success" type="submit" (click)="search()">Search</button>
+        </form>
+    </nav>
+    <div *ngIf="username">
+        <div class="panel panel-default">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>{{ username.name }}</h4>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <span class="label label-info space">{{username.public_repos}} Public Repositories
+                                 </span>
+                                <span class="label label-primary space">{{username.public_gists}} Public Gists </span>
+                                <span class="label label-success space">{{username.followers}} Followers</span>
+                                <span class="label label-warning space">{{username.following}} Following</span>
+                                <br>
+                            </div>
+                            <br>
+                            <div class="panel-body">
+                                <h3><strong>Repositories</strong></h3>
+                                <div *ngFor="let repo of repos">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4><a target="_blank" href="{{repo.html_url}}">{{repo.name}}</a></h4>
+                                            <p>{{repo.description}}</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <span class="label label-warning">{{repo.forks}} Forks</span>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
