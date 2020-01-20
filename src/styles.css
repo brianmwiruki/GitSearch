@@ -30,5 +30,5 @@ button {
 
 button:hover {
     width: 55%;
-    transition: 1s ease-in;
+    transition: 1s ease;
 }
