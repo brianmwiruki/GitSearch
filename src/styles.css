@@ -7,8 +7,18 @@ body {
 
 h1 {
     float: left;
-    margin-bottom: 30%;
     text-align: center;
+    margin-top: 13%;
+}
+
+form {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input:hover {
+    width: 100%;
 }
 
 button {
@@ -20,4 +30,5 @@ button {
 
 button:hover {
     width: 55%;
+    transition: 1s ease-in;
 }
