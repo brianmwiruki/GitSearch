@@ -15,7 +15,6 @@ export class UserpageComponent implements OnInit {
 
   constructor(private profileService:ProfileService) {
   }
-
     searchProfile(){
 
     this.profileService.updateProfile(this.username);
@@ -29,8 +28,6 @@ export class UserpageComponent implements OnInit {
       this.repos = repos;
     });
   }
-
-
   ngOnInit() {
 
     this.profileService.updateProfile("Bryan4real");
